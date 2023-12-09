@@ -1,11 +1,23 @@
 .card {
+  width: 540px;
+  margin-bottom: 100px;
 }
 
 .card__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
 }
 
 .card__list-item {
-}
-
-.card__list-divider {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  list-style: none;
 }
