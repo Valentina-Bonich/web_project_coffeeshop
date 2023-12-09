@@ -1,12 +1,14 @@
 .header {
   height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px 40px;
 }
 
-.header__title .header__title_cursive {
+.header__title_cursive {
   font-family: "Noto Serif";
   font-style: italic;
+  font-weight: normal;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
@@ -15,8 +17,8 @@
 
 .header__title {
   max-width: 729px;
-  margin: 183px 0 28px 80px;
   font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
@@ -28,6 +30,9 @@
   margin-left: 80px;
   font-size: 20px;
   line-height: 30px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header__image {
@@ -44,7 +49,6 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0 80px 40px 80px;
 }
 
 .header__footer-column {
@@ -76,6 +80,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  font-style: normal;
 }
 
 .header__footer-adress {
