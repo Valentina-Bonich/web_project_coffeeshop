@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-image: url(../images/background_recipes.svg);
-  padding: 100px 80px 215px;
+  padding: 100px 80px 215px 80px;
 }
 
 .recipes__title {
