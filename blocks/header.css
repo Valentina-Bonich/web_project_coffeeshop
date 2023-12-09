@@ -2,11 +2,6 @@
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  background-image: url(../images/background_header.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .header__title .header__title_cursive {
