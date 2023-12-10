@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="descripton" content="página web de mi cafetería" />
+    <meta name="description" content="página web de mi cafetería" />
     <meta name="author" content="Valentina Bonich" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta name="keywords" content="cafetería" />
     <title>Cafetería de Especialidad</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -39,7 +39,9 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span-accent class="header__title_cursive">Café de especialidad</span-accent>
+          <span-accent class="header__title header__title_cursive"
+            >Café de especialidad</span-accent
+          >
           en la biblioteca Triple Peaks
         </h1>
         <p class="header__description">
@@ -80,26 +82,27 @@
             <div class="recipes__videos">
               <div class="recipes__videos recipes__videos_iframe-item">
                 <iframe
-                width="480"
-                height="273"
+                  class="recipes__iframe"
+                  width="480"
+                  height="273"
                   allowfullscreen
                   src="https://www.youtube.com/embed/j6VlT_jUVPc?si=u72K9FTyZVsdQwLI"
                 ></iframe>
-                <p class="recipes__video-caption">
-                  Receta en Aeropress
-                  ~5 min</p>
+                <p class="recipes__video-caption">Receta en Aeropress ~5 min</p>
               </div>
+
               <div class="recipes__videos recipes__videos_iframe-item">
                 <iframe
-                width="480"
-                height="273"
+                  class="recipes__iframe"
+                  width="480"
+                  height="273"
                   allowfullscreen
                   src="https://www.youtube.com/embed/st571DYYTR8?si=SRH8GnSjAom30TDy"
-                  >
+                >
                 </iframe>
-                <p class="recipes__video-caption">Receta en cafetera francesa
-                  ~15 min</p>
-              </div>
+                <p class="recipes__video-caption">
+                  Receta en cafetera francesa ~15 min
+                </p>
               </div>
             </div>
           </div>
@@ -107,160 +110,230 @@
         <section class="reservation">
           <form class="form">
             <div class="reservation__form">
-          <h2 class="reservation__title" id="reserva">Reservar una mesa</h2>
-            <fieldset class="form__fieldset">
-            <label class="form__label" for="name" >Nombre *</label>
-            <input class="form__input" id="name" type="text" placeholder="Nombre Apellido" required>
+              <h2 class="reservation__title" id="reserva">Reservar una mesa</h2>
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="name">Nombre *</label>
+                <input
+                  class="form__input"
+                  id="name"
+                  type="text"
+                  placeholder="Nombre Apellido"
+                  required
+                />
 
-            <label class="form__label" for="number" >Número de comensales *</label>
-            <input class="form__input" id="number" type="number" placeholder="1-8" required>
+                <label class="form__label" for="number"
+                  >Número de comensales *</label
+                >
+                <input
+                  class="form__input"
+                  id="number"
+                  type="number"
+                  placeholder="1-8"
+                  required
+                />
 
-            <label class="form__label" for="date" >Fecha y Hora *</label>
-            <input class="form__input" id="date" type="datetime-local" required>
+                <label class="form__label" for="date">Fecha y Hora *</label>
+                <input
+                  class="form__input"
+                  id="date"
+                  type="datetime-local"
+                  required
+                />
 
-            <label class="form__label" for="email" >Tu correo electrónico *</label>
-            <input class="form__input" id="email" type="email" placeholder="email@email.com" required>
-          </fieldset>
+                <label class="form__label" for="email"
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  class="form__input"
+                  id="email"
+                  type="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </fieldset>
 
-          <button class="form__button" type="button">Reservar una mesa</button>
+              <button class="form__button" type="button">
+                Reservar una mesa
+              </button>
 
-            <label class="form__label form__label_checkbox" for="checkbox">
-               <input class="form__input form__input_checkbox" type="checkbox" value="checkbox" id="checkbox">Acepto los términos de uso</label>
-                    </div>
-      </form>
+              <label class="form__label form__label_checkbox" for="checkbox">
+                <input
+                  class="form__input form__input_checkbox"
+                  type="checkbox"
+                  value="checkbox"
+                  id="checkbox"
+                />Acepto los términos de uso</label
+              >
+            </div>
+          </form>
         </section>
-        <section class="menu" id="menu">
-          <div class="menu__title">
-            <h2>Menú</h2>
+        <section class="menu">
+          <div class="menu__content">
+            <h2 class="menu__title" id="menu">Menú</h2>
           </div>
           <div class="menu__subtitle">
-            <p>Elaboramos nuestro café con granos certificados de comercio justo, tostados localmente, y usamos tazas biodegradables. Todos los tés de nuestra colección a $2/taza.</p>
+            <p>
+              Elaboramos nuestro café con granos certificados de comercio justo,
+              tostados localmente, y usamos tazas biodegradables. Todos los tés
+              de nuestra colección a $2/taza.
+            </p>
           </div>
 
           <div class="menu__cards">
+            <div class="card">
+              <div class="card__title">
+                <h3>De filtro</h3>
+              </div>
+              <ul>
+                <li class="card__list-item">
+                  Regular (12 oz)_____________________________________________
+                  <span class="card__list-divider"></span>
+                  $1
+                </li>
+                <li class="card__list-item">
+                  Grande (16 oz)_____________________________________________
+                  <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+                <li class="card__list-item">
+                  XL (20 oz)__________________________________________________
+                  <span class="card__list-divider"></span>
+                  $1.5
+                </li>
+                <li class="card__list-item">
+                  Tamaño familiar (24 oz, descafeinado)____________________
+                  <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Café helado (16 oz)________________________________________
+                  <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+              </ul>
+            </div>
 
-          <div class="card">
-           <div class="card__title">
-            <h3>De filtro</h3>
+            <div class="card">
+              <div class="card__content">
+                <h3 class="card__title" id="contactos">Espresso</h3>
+              </div>
+              <ul>
+                <li class="card__list-item">
+                  Macchiato____________________________________________
+                  <span class="card__list-divider"></span>
+                  $2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado_______________________________________________
+                  <span class="card__list-divider"></span>
+                  $2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha_________________________________________________
+                  <span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Amanecer en Bay Area (descafeinado)_________________
+                  <span class="card__list-divider"></span>
+                  $10
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">
+                <h3>Repostería</h3>
+              </div>
+              <ul>
+                <li class="card__list-item">
+                  Croissant de almendra__________________________________
+                  <span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Pan de banana__________________________________________
+                  <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Tarta de limón__________________________________________
+                  <span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Pastel Blue velvet______________________________________
+                  <span class="card__list-divider"></span>
+                  $3.75
+                </li>
+                <li class="card__list-item">
+                  Cookie web______________________________________________
+                  <span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Baguette fresco_________________________________________
+                  <span class="card__list-divider"></span>
+                  $0.25
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul>
-          <li class="card__list-item">Regular (12 oz)_____________________________________________
-          <span class="card__list-divider"></span>
-          $1
-        </li>
-        <li class="card__list-item">Grande (16 oz)_____________________________________________
-          <span class="card__list-divider"></span>
-          $1.25
-        </li>
-        <li class="card__list-item">XL (20 oz)__________________________________________________
-          <span class="card__list-divider"></span>
-          $1.5
-        </li>
-        <li class="card__list-item">Tamaño familiar (24 oz, descafeinado)____________________
-          <span class="card__list-divider"></span>
-          $1.75
-        </li>
-        <li class="card__list-item">Café helado (16 oz)________________________________________
-          <span class="card__list-divider"></span>
-          $1.25
-        </li>
-        </ul>
-        </div>
-
-        <div class="card">
-          <div class="card__title">
-           <h3>Espresso</h3>
-         </div>
-         <ul>
-          <li class="card__list-item">Macchiato____________________________________________
-          <span class="card__list-divider"></span>
-          $2.25
-        </li>
-        <li class="card__list-item">Cortado_______________________________________________
-          <span class="card__list-divider"></span>
-          $2.5
-        </li>
-        <li class="card__list-item">Mocha_________________________________________________
-          <span class="card__list-divider"></span>
-          $3
-        </li>
-        <li class="card__list-item">Amanecer en Bay Area (descafeinado)_________________
-          <span class="card__list-divider"></span>
-          $10
-        </li>
-        </ul>
-        </div>
-
-       <div class="card">
-        <div class="card__title">
-         <h3>Repostería</h3>
-       </div>
-       <ul>
-        <li class="card__list-item">Croissant de almendra__________________________________
-        <span class="card__list-divider"></span>
-        $2
-      </li>
-      <li class="card__list-item">Pan de banana__________________________________________
-        <span class="card__list-divider"></span>
-        $1.75
-      </li>
-      <li class="card__list-item">Tarta de limón__________________________________________
-        <span class="card__list-divider"></span>
-        $3
-      </li>
-      <li class="card__list-item">Pastel Blue velvet______________________________________
-        <span class="card__list-divider"></span>
-        $3.75
-      </li>
-      <li class="card__list-item">Cookie web______________________________________________
-        <span class="card__list-divider"></span>
-        $2
-      </li>
-      <li class="card__list-item">Baguette fresco_________________________________________
-        <span class="card__list-divider"></span>
-        $0.25
-      </li>
-      </ul>
-      </div>
-
-        </div>
         </section>
 
         <section class="about">
-          <h2 class="about__title">Sobre la cafetería</h2>
+          <h2 class="about__title" id="contactos">Sobre la cafetería</h2>
           <div class="about__content">
-          <p class="about__paragraph">Nuestra cafetería se ubica en la Biblioteca Triple Peaks. Cuenta con 6 mesas y WiFi gratuito.</p>
-          <p class="about__paragraph">Nuestra principal misión es mantener a nuestros comensales cómodos y con energía.</p>
-          <p class="about__paragraph">Además, buscamos reducir nuestro impacto ambiental, así que no vendemos tazas de un solo uso. ¡Pero puedes comprar una de nuestras tazas reutilizables!</p>
-        </div>
-        <div class="about__circle"></div>
-        <div class="about__circle about__circle_animation_blurred"></div>
+            <p class="about__paragraph">
+              Nuestra cafetería se ubica en la Biblioteca Triple Peaks. Cuenta
+              con 6 mesas y WiFi gratuito.
+            </p>
+            <p class="about__paragraph">
+              Nuestra principal misión es mantener a nuestros comensales cómodos
+              y con energía.
+            </p>
+            <p class="about__paragraph">
+              Además, buscamos reducir nuestro impacto ambiental, así que no
+              vendemos tazas de un solo uso. ¡Pero puedes comprar una de
+              nuestras tazas reutilizables!
+            </p>
+          </div>
+          <div class="about__circle">
+            <div class="about__circle about__circle_animation_blurred"></div>
+          </div>
         </section>
       </main>
 
       <footer class="footer">
-        <div class="footer__content"></div>
-        <div class="footer__logo">
-          <img src="./images/logo_coffeeshop_light.svg" alt="logo">
-        </div>
-        <div class="footer__social">
-          <h2 class="footer__social-heading">Redes sociales</h2>
-        <div class="footer__list">
-        <div class="footer__list-item">
-          <div class="footer__social-icon">
-            <img src="./images/facebook_white.svg" alt="logo facebook">
-            </div>
-            <div class="footer__social-link">Facebook</div>
-        </div>
-        <div class="footer__list-item">
-          <div class="footer__social-icon">
-            <img src="./images/instagram_white.svg" alt="logo instagram">
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="logo"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <h2 class="footer__social-heading">Redes sociales</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="logo facebook"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="logo instagram"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
           </div>
-        <div class="footer__social-link">Instagram</div>
         </div>
-      </div>
-      </div>
-        <div class="footer__copyright"> 2023 Valentina</div>
+        <p class="footer__copyright">2023 Valentina</p>
       </footer>
     </div>
   </body>
