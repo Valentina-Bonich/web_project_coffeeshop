@@ -109,16 +109,16 @@
             <div class="reservation__form">
           <h2 class="reservation__title" id="reserva">Reservar una mesa</h2>
             <fieldset class="form__fieldset">
-            <label class="form__label" for="name" >Nombre</label>
+            <label class="form__label" for="name" >Nombre *</label>
             <input class="form__input" id="name" type="text" placeholder="Nombre Apellido" required>
 
-            <label class="form__label" for="number" >Número de comensales</label>
+            <label class="form__label" for="number" >Número de comensales *</label>
             <input class="form__input" id="number" type="number" placeholder="1-8" required>
 
-            <label class="form__label" for="date" >Fecha y Hora</label>
+            <label class="form__label" for="date" >Fecha y Hora *</label>
             <input class="form__input" id="date" type="datetime-local" required>
 
-            <label class="form__label" for="email" >Tu correo electrónico</label>
+            <label class="form__label" for="email" >Tu correo electrónico *</label>
             <input class="form__input" id="email" type="email" placeholder="email@email.com" required>
           </fieldset>
 
@@ -129,7 +129,7 @@
                     </div>
       </form>
         </section>
-        <section class="menu">
+        <section class="menu" id="menu">
           <div class="menu__title">
             <h2>Menú</h2>
           </div>
@@ -227,18 +227,41 @@
         </section>
 
         <section class="about">
-          <div class="about__title">Sobre la cafetería</div>
+          <h2 class="about__title">Sobre la cafetería</h2>
           <div class="about__content">
-          <div class="about__paragraph">Nuestra cafetería se ubica en la Biblioteca Triple Peaks. Cuenta con 6 mesas y WiFi gratuito.</div>
-          <div class="about__paragraph">Nuestra principal misión es mantener a nuestros comensales cómodos y con energía.</div>
-          <div class="about__paragraph">Además, buscamos reducir nuestro impacto ambiental, así que no vendemos tazas de un solo uso. ¡Pero puedes comprar una de nuestras tazas reutilizables!</div>
+          <p class="about__paragraph">Nuestra cafetería se ubica en la Biblioteca Triple Peaks. Cuenta con 6 mesas y WiFi gratuito.</p>
+          <p class="about__paragraph">Nuestra principal misión es mantener a nuestros comensales cómodos y con energía.</p>
+          <p class="about__paragraph">Además, buscamos reducir nuestro impacto ambiental, así que no vendemos tazas de un solo uso. ¡Pero puedes comprar una de nuestras tazas reutilizables!</p>
         </div>
         <div class="about__circle"></div>
         <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
 
-      <footer></footer>
+      <footer class="footer">
+        <div class="footer__content"></div>
+        <div class="footer__logo">
+          <img src="./images/logo_coffeeshop_light.svg" alt="logo">
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__social-heading">Redes sociales</h2>
+        <div class="footer__list">
+        <div class="footer__list-item">
+          <div class="footer__social-icon">
+            <img src="./images/facebook_white.svg" alt="logo facebook">
+            </div>
+            <div class="footer__social-link">Facebook</div>
+        </div>
+        <div class="footer__list-item">
+          <div class="footer__social-icon">
+            <img src="./images/instagram_white.svg" alt="logo instagram">
+          </div>
+        <div class="footer__social-link">Instagram</div>
+        </div>
+      </div>
+      </div>
+        <div class="footer__copyright"> 2023 Valentina</div>
+      </footer>
     </div>
   </body>
 </html>
