@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .header__title_cursive {
@@ -27,7 +29,6 @@
 
 .header__description {
   max-width: 683px;
-  margin-left: 80px;
   font-size: 20px;
   line-height: 30px;
   font-family: "Noto Serif";
@@ -46,9 +47,8 @@
 .header__footer {
   margin-top: auto;
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .header__footer-column {
