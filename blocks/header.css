@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.header__title_cursive {
+.header__title .header__title_cursive {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
